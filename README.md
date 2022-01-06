@@ -2,7 +2,7 @@
 
 ## Overview
 
-set you birthday to birth_date
+Set up your birthday to birth_date
 
 Velocity of the particles. Must be one of the following:
 
