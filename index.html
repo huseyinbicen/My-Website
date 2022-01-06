@@ -4,8 +4,8 @@
     <title>Huseyin Bicen - SDE</title>
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Optional meta tags -->
     <meta property="og:site_name" content="Huseyin Bicen" />
     <meta property="og:title" content="Huseyin Bicen - Software Development Engineer" />
@@ -21,15 +21,15 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="Huseyin Bicen - Software Development Engineer" />
     <meta name="Description"
-        content="I love to solve challenging world-scale problems from an engineering perspective. Software Engineer gives me a chance to force the limits of imagination">
+        content="I love to solve challenging world-scale problems from an engineering perspective. Software Engineer gives me a chance to force the limits of imagination" />
 
-    <meta name="author" content="Huseyin Bicen">
+    <meta name="author" content="Huseyin Bicen" />
     <meta name="keywords"
-        content="Huseyin Bicen, Software Engineer , SDE , Software Development Engineer , Backend Software Engineer, Engineer , Java Backend Software Engineer, huseyin bicen , bicen huseyin, Huseyin Bicen, hüseyin, biçen, huseyin, bicen">
+        content="Huseyin Bicen, Software Engineer , SDE , Software Development Engineer , Backend Software Engineer, Engineer , Java Backend Software Engineer, huseyin bicen , bicen huseyin, Huseyin Bicen, hüseyin, biçen, huseyin, bicen" />
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -115,15 +115,14 @@
 </head>
 
 <body>
-    <div id="particle-canvas">
-    </div>
+    <div id="particle-canvas"></div>
 
     <div class="myContent myBackground">
         <div class="row d-flex justify-content-center">
             <div class="col-md-9">
                 <div class="text-center"> <img
-                        src="https://media-exp1.licdn.com/dms/image/C5603AQE69whAP5kTkg/profile-displayphoto-shrink_200_200/0/1599695037603?e=1646870400&v=beta&t=fTvcSt0QjZP8wtm9aZhBnKk3FLvxDCeCuNWfMqkul6w"
-                        width="100" class="rounded-circle"> </div>
+                        src="https://lh3.googleusercontent.com/-WSz0TidqnKo/Ydde2BSTW2I/AAAAAAAACaA/YZy-S7wP4D0LE5tjqkgTnqmQLE48X4TtACNcBGAsYHQ/1599695037603.jpg"
+                        width="100" class="rounded-circle" /> </div>
                 <div class="text-center mt-3">
                     <h3 class="mt-2 mb-0">Huseyin BICEN</h3>
                     <span>Software Development Engineer</span>
@@ -181,27 +180,27 @@
                 </div>
                 <div class="row d-flex justify-content-center mt-3" style="display: inline-flex">
                     <div class="col block-relative-fitcontet">
-                        <span class="bg-secondary px-4 rounded text-white" id="years_">-</span><br>
+                        <span class="bg-secondary px-4 rounded text-white" id="years_">-</span><br />
                         <span class="px-1 text-white" style="font-size: 11px;">YEARS</span>
                     </div>
                     <div class="col block-relative-fitcontet">
-                        <span class="bg-secondary px-4 rounded text-white" id="months_">-</span><br>
+                        <span class="bg-secondary px-4 rounded text-white" id="months_">-</span><br />
                         <span class="px-1 text-white" style="font-size: 11px;">MONTHS</span>
                     </div>
                     <div class="col">
-                        <span class="bg-secondary px-4 rounded text-white" id="days_">-</span><br>
+                        <span class="bg-secondary px-4 rounded text-white" id="days_">-</span><br />
                         <span class="px-1 text-white" style="font-size: 11px;">DAYS</span>
                     </div>
                     <div class="col">
-                        <span class="bg-secondary px-4 rounded text-white" id="hours_">-</span><br>
+                        <span class="bg-secondary px-4 rounded text-white" id="hours_">-</span><br />
                         <span class="px-1 text-white" style="font-size: 11px;">HOURS</span>
                     </div>
                     <div class="col">
-                        <span class="bg-secondary px-4 rounded text-white" id="minutes_">-</span><br>
+                        <span class="bg-secondary px-4 rounded text-white" id="minutes_">-</span><br />
                         <span class="px-1 text-white" style="font-size: 11px;">MINUTES</span>
                     </div>
                     <div class="col">
-                        <span class="bg-secondary px-4 rounded text-white" id="seconds_">-</span><br>
+                        <span class="bg-secondary px-4 rounded text-white" id="seconds_">-</span><br />
                         <span class="px-1 text-white" style="font-size: 11px;">SECONDS</span>
                     </div>
                 </div>
@@ -250,7 +249,11 @@
         document.querySelector("#date_").innerHTML = (new Date()).getFullYear();
 
         function pad(d) {
-            return (d < 10) ? '0' + d.toString() : d.toString();
+            if (d < 10) {
+                return "0" + d;
+            } else {
+                return d;
+            }
         }
 
         function diffYMDHMS(date1, date2) {
@@ -581,8 +584,8 @@
             particleColor: '#fff',
             background: '#1a252f',
             interactive: true,
-            speed: 'slow',
-            density: 'high'
+            speed: 'medium',
+            density: 'medium'
         };
         var particleCanvas = new ParticleNetwork(document.getElementById('particle-canvas'), options);
     </script>
