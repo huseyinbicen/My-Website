@@ -27,6 +27,7 @@
     <meta name="keywords"
         content="Huseyin Bicen, Software Engineer , SDE , Software Development Engineer , Backend Software Engineer, Engineer , Java Backend Software Engineer, huseyin bicen , bicen huseyin, Huseyin Bicen, hüseyin, biçen, huseyin, bicen" />
 
+    <link rel="icon" href="https://i.ibb.co/wdgDWTw/my-icon.png" type="image/icon type">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
@@ -48,20 +49,18 @@
             height: 100%;
         }
 
-        .myContent {
+        .my-content {
             zoom: 1;
-            z-index: 909;
+            z-index: 1000;
             text-align: center;
             position: fixed;
             left: 0;
             bottom: 0;
             right: 0;
             top: 0;
-            text-align: center;
-            margin-bottom: 20%;
+            height: fit-content;
+            margin: 25%;
             margin-top: 10%;
-            margin-left: 25%;
-            margin-right: 25%;
         }
 
         #socil-icons {
@@ -79,6 +78,37 @@
             color: rgb(255, 255, 255) !important;
         }
 
+        /* Use a media query to add a breakpoint at 800px: */
+        @media screen and (max-width: 800px) {
+            .my-content {
+                zoom: 1;
+                z-index: 1000;
+                text-align: center;
+                position: fixed;
+                height: fit-content;
+                width: fit-content;
+                margin: 5%;
+                margin-top: 30%;
+            }
+
+            #socil-icons {
+                text-align: center;
+                padding: 15px;
+                color: #585858;
+            }
+
+            #socil-icons li {
+                display: inline;
+                margin: 10px 5px;
+            }
+
+            #socil-icons .iconi {
+                font-size: 50px;
+                color: rgb(255, 255, 255) !important;
+            }
+
+        }
+
         .block-relative-fitcontet {
             display: block;
             width: fit-content;
@@ -89,19 +119,7 @@
             color: black !important;
         }
 
-        .footer {
-            zoom: 1;
-            z-index: 1000;
-            text-align: center;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 9px;
-        }
-
-        .myBackground {
+        .my-background {
             opacity: 1;
             background-color: rgba(185, 185, 185, 0.2);
             color: azure;
@@ -117,116 +135,106 @@
 <body>
     <div id="particle-canvas"></div>
 
-    <div class="myContent myBackground">
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-9">
-                <div class="text-center"> <img
-                        src="https://lh3.googleusercontent.com/-WSz0TidqnKo/Ydde2BSTW2I/AAAAAAAACaA/YZy-S7wP4D0LE5tjqkgTnqmQLE48X4TtACNcBGAsYHQ/1599695037603.jpg"
-                        width="100" class="rounded-circle" /> </div>
-                <div class="text-center mt-3">
-                    <h3 class="mt-2 mb-0">Huseyin BICEN</h3>
-                    <span>Software Development Engineer</span>
-                    <div class="px-4 mt-1">
-                        <p class="fonts" style="font-size: 12px;">I love to solve challenging world-scale problems from
-                            an engineering perspective. Software Engineer gives me a chance to force the limits of
-                            imagination.</p>
-                    </div>
-                    <ul id="socil-icons">
-                        <li title="Linkedin">
-                            <a href="https://www.linkedin.com/in/huseyinbicen" target="_blank">
-                                <i class="fab fa-linkedin-in iconi" style="color: black"></i>
-                            </a>
-
-                        </li>
-                        <li title="Github">
-                            <a href="https://github.com/huseyinbicen" target="_blank">
-                                <i class="fab fa-github iconi"></i>
-                            </a>
-                        </li>
-                        <li title="Youtube">
-                            <a href="https://www.youtube.com/channel/UCEqYkx58_faPcfkoY26Oygw" target="_blank">
-                                <i class="fab fa-youtube iconi"></i>
-
-                            </a>
-                        </li>
-                        <li title="Instagram">
-                            <a href="https://www.instagram.com/thisishus" target="_blank">
-                                <i class="fab fa-instagram iconi"></i>
-
-                            </a>
-                        </li>
-                        <li title="My Cat Instagram">
-                            <a href="https://www.instagram.com/thisiscatrobin" target="_blank">
-                                <i class="fas fa-cat iconi"></i>
-
-                            </a>
-                        </li>
-                        <li title="Twitter">
-                            <a href="https://twitter.com/thisishus" target="_blank">
-                                <i class="fab fa-twitter iconi"></i>
-                            </a>
-                        </li>
-                        <li title="My Blog">
-                            <a href="https://thisishus.blogspot.com" target="_blank">
-                                <i class="fas fa-blog iconi"></i>
-                            </a>
-                        </li>
-                        <li title="E-mail">
-                            <a href="mailto:huseynbicen@gmail.com" target="_blank">
-                                <i class="fas fa-envelope iconi"></i>
-                            </a>
-                        </li>
-                    </ul>
+    <div class="row d-flex justify-content-center my-content my-background">
+        <div class="col-md-8">
+            <div class="text-center"> <img src="https://i.ibb.co/FYCNPpM/1599695037603.jpg" width="100" class="rounded-circle" /> </div>
+            <div class="text-center mt-3">  
+                <h3 class="mt-2 mb-0">Huseyin BICEN</h3>
+                <span>Software Development Engineer</span>
+                <div class="px-4 mt-1">
+                    <p class="fonts" style="font-size: 12px;">I love to solve challenging world-scale problems from
+                        an engineering perspective. Software Engineer gives me a chance to force the limits of
+                        imagination.</p>
                 </div>
-                <div class="row d-flex justify-content-center mt-3" style="display: inline-flex">
-                    <div class="col block-relative-fitcontet">
-                        <span class="bg-secondary px-4 rounded text-white" id="years_">-</span><br />
-                        <span class="px-1 text-white" style="font-size: 11px;">YEARS</span>
-                    </div>
-                    <div class="col block-relative-fitcontet">
-                        <span class="bg-secondary px-4 rounded text-white" id="months_">-</span><br />
-                        <span class="px-1 text-white" style="font-size: 11px;">MONTHS</span>
-                    </div>
-                    <div class="col">
-                        <span class="bg-secondary px-4 rounded text-white" id="days_">-</span><br />
-                        <span class="px-1 text-white" style="font-size: 11px;">DAYS</span>
-                    </div>
-                    <div class="col">
-                        <span class="bg-secondary px-4 rounded text-white" id="hours_">-</span><br />
-                        <span class="px-1 text-white" style="font-size: 11px;">HOURS</span>
-                    </div>
-                    <div class="col">
-                        <span class="bg-secondary px-4 rounded text-white" id="minutes_">-</span><br />
-                        <span class="px-1 text-white" style="font-size: 11px;">MINUTES</span>
-                    </div>
-                    <div class="col">
-                        <span class="bg-secondary px-4 rounded text-white" id="seconds_">-</span><br />
-                        <span class="px-1 text-white" style="font-size: 11px;">SECONDS</span>
-                    </div>
+                <ul id="socil-icons">
+                    <li title="Linkedin">
+                        <a href="https://www.linkedin.com/in/huseyinbicen" target="_blank">
+                            <i class="fab fa-linkedin-in iconi" style="color: black"></i>
+                        </a>
+
+                    </li>
+                    <li title="Github">
+                        <a href="https://github.com/huseyinbicen" target="_blank">
+                            <i class="fab fa-github iconi"></i>
+                        </a>
+                    </li>
+                    <li title="Youtube">
+                        <a href="https://www.youtube.com/channel/UCEqYkx58_faPcfkoY26Oygw" target="_blank">
+                            <i class="fab fa-youtube iconi"></i>
+
+                        </a>
+                    </li>
+                    <li title="Instagram">
+                        <a href="https://www.instagram.com/thisishus" target="_blank">
+                            <i class="fab fa-instagram iconi"></i>
+
+                        </a>
+                    </li>
+                    <li title="My Cat Instagram">
+                        <a href="https://www.instagram.com/thisiscatrobin" target="_blank">
+                            <i class="fas fa-cat iconi"></i>
+
+                        </a>
+                    </li>
+                    <li title="Twitter">
+                        <a href="https://twitter.com/thisishus" target="_blank">
+                            <i class="fab fa-twitter iconi"></i>
+                        </a>
+                    </li>
+                    <li title="My Blog">
+                        <a href="https://thisishus.blogspot.com" target="_blank">
+                            <i class="fas fa-blog iconi"></i>
+                        </a>
+                    </li>
+                    <li title="E-mail">
+                        <a href="mailto:huseynbicen@gmail.com" target="_blank">
+                            <i class="fas fa-envelope iconi"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="row d-flex justify-content-center mt-3" style="display: inline-flex">
+                <div class="col block-relative-fitcontet">
+                    <span class="bg-secondary px-4 rounded text-white" id="years_">-</span><br />
+                    <span class="px-1 text-white" style="font-size: 11px;">YEARS</span>
+                </div>
+                <div class="col block-relative-fitcontet">
+                    <span class="bg-secondary px-4 rounded text-white" id="months_">-</span><br />
+                    <span class="px-1 text-white" style="font-size: 11px;">MONTHS</span>
+                </div>
+                <div class="col">
+                    <span class="bg-secondary px-4 rounded text-white" id="days_">-</span><br />
+                    <span class="px-1 text-white" style="font-size: 11px;">DAYS</span>
+                </div>
+                <div class="col">
+                    <span class="bg-secondary px-4 rounded text-white" id="hours_">-</span><br />
+                    <span class="px-1 text-white" style="font-size: 11px;">HOURS</span>
+                </div>
+                <div class="col">
+                    <span class="bg-secondary px-4 rounded text-white" id="minutes_">-</span><br />
+                    <span class="px-1 text-white" style="font-size: 11px;">MINUTES</span>
+                </div>
+                <div class="col">
+                    <span class="bg-secondary px-4 rounded text-white" id="seconds_">-</span><br />
+                    <span class="px-1 text-white" style="font-size: 11px;">SECONDS</span>
                 </div>
             </div>
-
         </div>
+
     </div>
 
-    <footer class="footer myBackground">
-        <div class="inner">
-            <div class="footer__inner">
-                <div class="footer__content">
-                    © <span id="date_"> </span> |
-                    <a href="http://huseyinbicen.com" style="font-weight: bold;" target="_blank">
-                        huseyinbicen.com
-                    </a>
-                </div>
-            </div>
-            <div class="footer__inner">
-                <div class="footer__content">
-                    <span>Powered by <a href="https://github.com/huseyinbicen" style="font-weight: bold;"
-                            target="_blank">
-                            Huseyin
-                        </a></span>
-                </div>
-            </div>
+
+    <footer class="text-center text-white fixed-bottom my-background">
+        <div class="container">
+            © <span id="date_"> </span> |
+            <a href="http://huseyinbicen.com" style="font-weight: bold;" target="_blank">
+                huseyinbicen.com
+            </a>
+        </div>
+        <div class="text-center">
+            <span>Powered by <a href="https://github.com/huseyinbicen" style="font-weight: bold;" target="_blank">
+                    Huseyin
+                </a></span>
         </div>
     </footer>
 
