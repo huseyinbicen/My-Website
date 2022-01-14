@@ -2,6 +2,8 @@
 
 ## Overview
 
+* Check My Website : https://www.huseyinbicen.com
+
 Set up your birthday to birth_date
 
 Velocity of the particles. Must be one of the following:
@@ -20,6 +22,7 @@ Density of the particles. Actual amount depends on the canvas size, and is calcu
 * Any number
 
 References link;
+- https://github.com/HasanNaser/My-Personel-Website
 - https://codepen.io/franky/pen/LGMWPK
 - https://github.com/JulianLaval/canvas-particle-network
 - https://i.ibb.co/QQtbXzV/photo-1450849608880-6f787542c88a.jpg

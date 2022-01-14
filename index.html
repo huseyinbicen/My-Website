@@ -9,15 +9,15 @@
     <!-- Optional meta tags -->
     <meta property="og:site_name" content="Huseyin Bicen" />
     <meta property="og:title" content="Huseyin Bicen - Software Development Engineer" />
-    <meta property="og:url" content="http://huseyinbicen.com" />
+    <meta property="og:url" content="https://huseyinbicen.com" />
     <meta property="og:type" content="website" />
     <meta property="og:description"
         content="I love to solve challenging world-scale problems from an engineering perspective. Software Engineer gives me a chance to force the limits of imagination" />
     <meta itemprop="name" content="Huseyin Bicen" />
-    <meta itemprop="url" content="http://huseyinbicen.com" />
+    <meta itemprop="url" content="https://huseyinbicen.com" />
     <meta itemprop="description" content="Huseyin Bicen's official website" />
     <meta name="twitter:title" content="Huseyin Bicen" />
-    <meta name="twitter:url" content="http://huseyinbicen.com" />
+    <meta name="twitter:url" content="https://huseyinbicen.com" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:description" content="Huseyin Bicen - Software Development Engineer" />
     <meta name="Description"
@@ -37,6 +37,7 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- CSS My Website -->
     <style type="text/css">
         body {
             margin: 0;
@@ -60,7 +61,7 @@
             top: 0;
             height: fit-content;
             margin: 25%;
-            margin-top: 10%;
+            margin-top: 8%;
         }
 
         #socil-icons {
@@ -78,8 +79,22 @@
             color: rgb(255, 255, 255) !important;
         }
 
+        .my-px-4 {
+            padding-right: 1.5rem !important;
+            padding-left: 1.5rem !important;
+        }
+
+        .date-font {
+            font-size: 9px;
+        }
+
+        .footer-font {
+            font-size: 12px;
+        }
+
         /* Use a media query to add a breakpoint at 800px: */
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 400px),
+        screen and (max-height: 950px) {
             .my-content {
                 zoom: 1;
                 z-index: 1000;
@@ -87,26 +102,38 @@
                 position: fixed;
                 height: fit-content;
                 width: fit-content;
-                margin: 5%;
-                margin-top: 30%;
+                margin: 3%;
+                margin-top: 10%;
             }
 
             #socil-icons {
                 text-align: center;
-                padding: 15px;
+                padding: 10px;
                 color: #585858;
             }
 
             #socil-icons li {
                 display: inline;
-                margin: 10px 5px;
+                margin: 8px 4px;
             }
 
             #socil-icons .iconi {
-                font-size: 50px;
+                font-size: 25px;
                 color: rgb(255, 255, 255) !important;
             }
 
+            .date-font {
+                font-size: 6px;
+            }
+
+            .my-px-4 {
+                padding-right: .5rem !important;
+                padding-left: .5rem !important;
+            }
+
+            .footer-font {
+                font-size: 7px;
+            }
         }
 
         .block-relative-fitcontet {
@@ -133,12 +160,15 @@
 </head>
 
 <body>
+    <!-- Background -->
     <div id="particle-canvas"></div>
 
+    <!-- My Center Content -->
     <div class="row d-flex justify-content-center my-content my-background">
         <div class="col-md-8">
-            <div class="text-center"> <img src="https://i.ibb.co/FYCNPpM/1599695037603.jpg" width="100" class="rounded-circle" /> </div>
-            <div class="text-center mt-3">  
+            <div class="text-center"> <img src="https://i.ibb.co/FYCNPpM/1599695037603.jpg" width="100"
+                    class="rounded-circle" /> </div>
+            <div class="text-center mt-1">
                 <h3 class="mt-2 mb-0">Huseyin BICEN</h3>
                 <span>Software Development Engineer</span>
                 <div class="px-4 mt-1">
@@ -146,6 +176,8 @@
                         an engineering perspective. Software Engineer gives me a chance to force the limits of
                         imagination.</p>
                 </div>
+
+                <!-- Social Media -->
                 <ul id="socil-icons">
                     <li title="Linkedin">
                         <a href="https://www.linkedin.com/in/huseyinbicen" target="_blank">
@@ -182,7 +214,7 @@
                         </a>
                     </li>
                     <li title="My Blog">
-                        <a href="https://thisishus.blogspot.com" target="_blank">
+                        <a href="https://blog.huseyinbicen.com" target="_blank">
                             <i class="fas fa-blog iconi"></i>
                         </a>
                     </li>
@@ -193,45 +225,125 @@
                     </li>
                 </ul>
             </div>
-            <div class="row d-flex justify-content-center mt-3" style="display: inline-flex">
+
+            <!-- Duration of Life -->
+            <div class="row d-flex justify-content-center mt-1">
+                <div class="px-4">
+                    <p class="fonts" style="font-size: 12px;">Duration of Life</p>
+                </div>
+
                 <div class="col block-relative-fitcontet">
-                    <span class="bg-secondary px-4 rounded text-white" id="years_">-</span><br />
-                    <span class="px-1 text-white" style="font-size: 11px;">YEARS</span>
+                    <span class="bg-secondary rounded text-white my-px-4" id="birth_years_">-</span><br />
+                    <span class="px-1 text-white date-font">YEARS</span>
                 </div>
                 <div class="col block-relative-fitcontet">
-                    <span class="bg-secondary px-4 rounded text-white" id="months_">-</span><br />
-                    <span class="px-1 text-white" style="font-size: 11px;">MONTHS</span>
+                    <span class="bg-secondary rounded text-white my-px-4" id="birth_months_">-</span><br />
+                    <span class="px-1 text-white date-font">MONTHS</span>
                 </div>
                 <div class="col">
-                    <span class="bg-secondary px-4 rounded text-white" id="days_">-</span><br />
-                    <span class="px-1 text-white" style="font-size: 11px;">DAYS</span>
+                    <span class="bg-secondary rounded text-white my-px-4" id="birth_days_">-</span><br />
+                    <span class="px-1 text-white date-font">DAYS</span>
                 </div>
                 <div class="col">
-                    <span class="bg-secondary px-4 rounded text-white" id="hours_">-</span><br />
-                    <span class="px-1 text-white" style="font-size: 11px;">HOURS</span>
+                    <span class="bg-secondary rounded text-white my-px-4" id="birth_hours_">-</span><br />
+                    <span class="px-1 text-white date-font">HOURS</span>
                 </div>
                 <div class="col">
-                    <span class="bg-secondary px-4 rounded text-white" id="minutes_">-</span><br />
-                    <span class="px-1 text-white" style="font-size: 11px;">MINUTES</span>
+                    <span class="bg-secondary rounded text-white my-px-4" id="birth_minutes_">-</span><br />
+                    <span class="px-1 text-white date-font">MINUTES</span>
                 </div>
                 <div class="col">
-                    <span class="bg-secondary px-4 rounded text-white" id="seconds_">-</span><br />
-                    <span class="px-1 text-white" style="font-size: 11px;">SECONDS</span>
+                    <span class="bg-secondary rounded text-white my-px-4" id="birth_seconds_">-</span><br />
+                    <span class="px-1 text-white date-font">SECONDS</span>
+                </div>
+            </div>
+
+            <!-- Duration of Experience -->
+            <div class="row d-flex justify-content-center mt-3">
+                <div class="px-4">
+                    <p class="fonts" style="font-size: 12px;">Duration of Experience</p>
+                </div>
+
+                <div class="col block-relative-fitcontet">
+                    <span class="bg-secondary rounded text-white my-px-4" id="work_years_">-</span><br />
+                    <span class="px-1 text-white date-font">YEARS</span>
+                </div>
+                <div class="col block-relative-fitcontet">
+                    <span class="bg-secondary rounded text-white my-px-4" id="work_months_">-</span><br />
+                    <span class="px-1 text-white date-font">MONTHS</span>
+                </div>
+                <div class="col">
+                    <span class="bg-secondary rounded text-white my-px-4" id="work_days_">-</span><br />
+                    <span class="px-1 text-white date-font">DAYS</span>
+                </div>
+                <div class="col">
+                    <span class="bg-secondary rounded text-white my-px-4" id="work_hours_">-</span><br />
+                    <span class="px-1 text-white date-font">HOURS</span>
+                </div>
+                <div class="col">
+                    <span class="bg-secondary rounded text-white my-px-4" id="work_minutes_">-</span><br />
+                    <span class="px-1 text-white date-font">MINUTES</span>
+                </div>
+                <div class="col">
+                    <span class="bg-secondary rounded text-white my-px-4" id="work_seconds_">-</span><br />
+                    <span class="px-1 text-white date-font">SECONDS</span>
                 </div>
             </div>
         </div>
 
+        <!-- Donate Button -->
+        <div class="row d-flex justify-content-center mt-3 mb-3" style="display: inline-flex">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Donate 💙
+                </button>
+            </div>
+        </div>
     </div>
 
+    <!-- Donate Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Thank you so much 🙂</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <div class="row d-flex justify-content-center mt-3 mb-3" style="display: inline-flex">
+                        <div class="col-md-12 col-12">
+                            <img src="https://i.ibb.co/rxqnG7x/Whats-App-Image-2022-01-14-at-1-50-18-AM.jpg"
+                                class="img-fluid mx-auto d-block" alt="My USDT Wallet (Ethereum - ERC20)">
+                            <h5 class="text-center">My USDT Wallet (Ethereum - ERC20)</h5>
+                            <p class="text-center" style="font-size: 11px;">0xbc34c2dcc8fd5e29ca01d786150375c7d737e135
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- My Footer -->
     <footer class="text-center text-white fixed-bottom my-background">
-        <div class="container">
+        <div class="container footer-font">
             © <span id="date_"> </span> |
-            <a href="http://huseyinbicen.com" style="font-weight: bold;" target="_blank">
+            <a href="https://huseyinbicen.com" style="font-weight: bold;" target="_blank">
                 huseyinbicen.com
             </a>
         </div>
-        <div class="text-center">
+        <div class="text-center footer-font">
             <span>Powered by <a href="https://github.com/huseyinbicen" style="font-weight: bold;" target="_blank">
                     Huseyin
                 </a></span>
@@ -253,6 +365,10 @@
         integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <!-- Jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JS for Calculate Dates -->
     <script type="text/javascript">
         document.querySelector("#date_").innerHTML = (new Date()).getFullYear();
 
@@ -286,32 +402,50 @@
         }
 
         var calculateAge = () => {
-            let age_year = document.querySelector('#years_');
-            let age_months = document.querySelector('#months_');
-            let age_days = document.querySelector('#days_');
-            let age_hours = document.querySelector('#hours_');
-            let age_minutes = document.querySelector('#minutes_');
-            let age_seconds = document.querySelector('#seconds_');
+            let work_year = document.querySelector('#work_years_');
+            let work_months = document.querySelector('#work_months_');
+            let work_days = document.querySelector('#work_days_');
+            let work_hours = document.querySelector('#work_hours_');
+            let work_minutes = document.querySelector('#work_minutes_');
+            let work_seconds = document.querySelector('#work_seconds_');
+
+            let birth_year = document.querySelector('#birth_years_');
+            let birth_months = document.querySelector('#birth_months_');
+            let birth_days = document.querySelector('#birth_days_');
+            let birth_hours = document.querySelector('#birth_hours_');
+            let birth_minutes = document.querySelector('#birth_minutes_');
+            let birth_seconds = document.querySelector('#birth_seconds_');
 
             setInterval(function () {
                 var now = moment();
-                var birth_date = moment("1996-06-13 10:00:00", "YYYY-MM-DD HH:mm:ss");
-                var diff = diffYMDHMS(now, birth_date);
+                var start_work_date = moment("2019-09-09 09:00:00", "YYYY-MM-DD HH:mm:ss");
+                var work_diff = diffYMDHMS(now, start_work_date);
 
-                age_year.innerHTML = pad(diff.years);
-                age_months.innerHTML = pad(diff.months);
-                age_days.innerHTML = pad(diff.days);
-                age_hours.innerHTML = pad(diff.hours);
-                age_minutes.innerHTML = pad(diff.minutes);
-                age_seconds.innerHTML = pad(diff.seconds);
+                work_year.innerHTML = pad(work_diff.years);
+                work_months.innerHTML = pad(work_diff.months);
+                work_days.innerHTML = pad(work_diff.days);
+                work_hours.innerHTML = pad(work_diff.hours);
+                work_minutes.innerHTML = pad(work_diff.minutes);
+                work_seconds.innerHTML = pad(work_diff.seconds);
+
+                var birth_date = moment("1996-06-13 09:00:00", "YYYY-MM-DD HH:mm:ss");
+                var birth_diff = diffYMDHMS(now, birth_date);
+
+                birth_year.innerHTML = pad(birth_diff.years);
+                birth_months.innerHTML = pad(birth_diff.months);
+                birth_days.innerHTML = pad(birth_diff.days);
+                birth_hours.innerHTML = pad(birth_diff.hours);
+                birth_minutes.innerHTML = pad(birth_diff.minutes);
+                birth_seconds.innerHTML = pad(birth_diff.seconds);
+
             }, 1000);
-
         }
 
         calculateAge();
 
     </script>
 
+    <!-- JS for Background -->
     <script type="text/javascript">
         // Set up ParticleNetwork appropriately for the environment.
         (function (factory) {
@@ -587,6 +721,8 @@
 
         }));
     </script>
+
+    <!-- JS for set up Background -->
     <script type="text/javascript">
         var options = {
             particleColor: '#fff',
@@ -595,6 +731,7 @@
             speed: 'medium',
             density: 'medium'
         };
+
         var particleCanvas = new ParticleNetwork(document.getElementById('particle-canvas'), options);
     </script>
 </body>
