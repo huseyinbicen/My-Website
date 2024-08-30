@@ -40,9 +40,15 @@
 
     <!-- CSS My Website -->
     <style type="text/css">
+        html {
+            font-size: 0.86rem; /* Default font size */
+        }
+
         body {
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevents scrolling the whole page */
         }
 
         #particle-canvas {
@@ -52,92 +58,57 @@
         }
 
         .my-content {
-            zoom: 1;
             z-index: 1000;
             text-align: center;
             position: fixed;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            top: 0;
-            height: fit-content;
-            margin: 25%;
-            margin-top: 8%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%; /* Adjusted width for better control */
+            height: auto;
+            max-height: 80%; /* Allow space for scrolling */
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         #socil-icons {
             padding: 10px;
             color: #585858;
+            text-align: center;
         }
 
         #socil-icons li {
-            display: inline;
-            margin: 10px 5px;
+            display: inline-block;
+            margin: 0 10px;
         }
 
         #socil-icons .iconi {
-            font-size: 50px;
-            color: rgb(255, 255, 255) !important;
+            font-size: 2.6rem; /* Large size for desktop */
+            color: #ffffff !important;
         }
 
         a.social {
             text-decoration: none;
         }
 
+        /* Responsive Padding */
         .my-px-4 {
-            padding-right: 1.5rem !important;
-            padding-left: 1.5rem !important;
+            padding-right: 0.6rem;
+            padding-left: 0.6rem;
         }
 
         .date-font {
-            font-size: 9px;
+            font-size: 0.65rem;
         }
 
         .footer-font {
-            font-size: 12px;
+            font-size: 0.9rem;
         }
 
-        /* Use a media query to add a breakpoint at 800px: */
-        @media screen and (max-width: 600px) {
-            .my-content {
-                zoom: 1;
-                z-index: 1000;
-                text-align: center;
-                position: fixed;
-                height: fit-content;
-                width: fit-content;
-                margin: 3%;
-                margin-top: 10%;
-            }
-
-            #socil-icons {
-                text-align: center;
-                padding: 10px;
-                color: #585858;
-            }
-
-            #socil-icons li {
-                display: inline;
-                margin: 8px 4px;
-            }
-
-            #socil-icons .iconi {
-                font-size: 25px;
-                color: rgb(255, 255, 255) !important;
-            }
-
-            .date-font {
-                font-size: 6px;
-            }
-
-            .my-px-4 {
-                padding-right: .5rem !important;
-                padding-left: .5rem !important;
-            }
-
-            .footer-font {
-                font-size: 7px;
-            }
+        .main-text-font {
+            font-size: 1.1rem;
         }
 
         .block-relative-fitcontet {
@@ -157,9 +128,101 @@
         }
 
         .inner {
-            width: 15%;
+            width: 100%;
+            max-width: 200px;
             margin: 0 auto;
         }
+
+        /* Adjustments for tablets (768px to 1023px) */
+        @media screen and (max-width: 1023px) {
+            .my-content {
+                width: 70%;
+                max-height: 75%;
+                padding: 15px;
+            }
+
+            #socil-icons .iconi {
+                font-size: 2.6rem;
+            }
+
+            .date-font {
+                font-size: 0.65rem;
+            }
+
+            .main-text-font {
+                font-size: 1.1rem;
+            }
+
+            .footer-font {
+                font-size: 0.85rem;
+            }
+
+            .my-px-4 {
+                padding-right: 0.6rem;
+                padding-left: 0.6rem;
+            }
+        }
+
+        /* Adjustments for mobile devices (480px to 767px) */
+        @media screen and (max-width: 767px) {
+            .my-content {
+                width: 80%;
+                max-height: 70%;
+                padding: 10px;
+            }
+
+            #socil-icons .iconi {
+                font-size: 1.5rem;
+            }
+
+            .date-font {
+                font-size: 0.55rem;
+            }
+
+            .main-text-font {
+                font-size: 1rem;
+            }
+
+            .footer-font {
+                font-size: 0.8rem;
+            }
+
+            .my-px-4 {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+        }
+
+        /* Adjustments for small mobile devices (less than 480px) */
+        @media screen and (max-width: 479px) {
+            .my-content {
+                width: 90%;
+                max-height: 65%;
+                padding: 5px;
+            }
+
+            #socil-icons .iconi {
+                font-size: 1.5rem;
+            }
+
+            .date-font {
+                font-size: 0.55rem;
+            }
+
+            .main-text-font {
+                font-size: 0.9rem;
+            }
+
+            .footer-font {
+                font-size: 0.75rem;
+            }
+
+            .my-px-4 {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+        }
+
     </style>
 </head>
 
@@ -177,13 +240,13 @@
                 <span>Software Development Engineer</span>
                 <div class="px-4 mt-1">
 
-                    <p class="fonts" style="font-size: 12px;">
+                    <p class="fonts main-text-font">
                         Hello and welcome to my page.
                         I’m Huseyin, a Software Development Engineer, and I love creating elegant and practical solutions for intricate, world-level challenges. 
                         When I tell you that engineering in software is my profession, it is more than just an occupation, it is a way of life, a means of perpetual learning and improvement and transformation of oneself.</p>
 
 
-                    <p class="fonts" style="font-size: 12px;">
+                    <p class="fonts main-text-font">
                         So once again, welcome to my site. 
                         I encourage you to go through my page to know more about my abilities, experience and the areas I have projects that excite me. 
                         I look forward to connecting with you.</p>
@@ -315,15 +378,11 @@
     <!-- My Footer -->
     <footer class="text-center text-white fixed-bottom my-background">
         <div class="container footer-font">
+            <span>Powered by <a href="https://github.com/huseyinbicen" style="font-weight: bold;" target="_blank">Huseyin</a></span>
             © <span id="date_"> </span> |
             <a href="https://huseyinbicen.com" style="font-weight: bold;" target="_blank">
                 huseyinbicen.com
             </a>
-        </div>
-        <div class="text-center footer-font">
-            <span>Powered by <a href="https://github.com/huseyinbicen" style="font-weight: bold;" target="_blank">
-                    Huseyin
-                </a></span>
         </div>
     </footer>
 
